@@ -1,0 +1,25 @@
+div {
+  display: inline;
+
+}
+
+.results {
+ display: flex;
+ flex-direction: column;
+  border-top: 2px solid grey;
+}
+
+.answer {
+  color: teal;
+  display: inline;
+  margin-left: 20px;
+  border-bottom: 1px solid rgba(90, 41, 180, 0.376);
+}
+
+.section {
+  background-color: rgb(185, 220, 221);
+  // margin-left: -15px;
+  margin: 10px -15px;
+  padding: 15px 5px;
+  color: rgb(68, 67, 71);
+}

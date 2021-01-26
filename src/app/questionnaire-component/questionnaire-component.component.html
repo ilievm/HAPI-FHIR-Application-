@@ -1,0 +1,45 @@
+<div *ngIf="!questionnaire.isCompleted">Submit the form to see the result below.</div>
+
+<div *ngIf="questionnaire.isCompleted">
+  <div class="results">
+    <div>Resource Type:
+      <span class="answer">Questionnaire</span>
+    </div>
+    <div>Date: 
+      <span class="answer">2010</span>
+    </div>
+    <div>status: 
+      <span class="answer">active</span>
+    </div>
+    <div>Do you have allergies? 
+      <span class="answer">{{questionnaire.allergies?questionnaire.allergies:false}}</span>
+    </div>
+    <div class="section">General questions
+      <span class="answer"></span>
+    </div>
+    <div>What is your gender?  
+      <span class="answer">{{questionnaire["2.1"]}}</span>
+    </div>
+    <div>What is your date of birth? 
+      <span class="answer">{{questionnaire["2.2"]}}</span>
+    </div>
+    <div>yyyy-mm-dd 
+      <span class="answer">{{questionnaire["2.3"]}}</span>
+    </div>
+    <div>What is your country of birth?  
+      <span class="answer">{{questionnaire["2.4"]}}</span>
+    </div>
+    <div>What is your marital status? 
+      <span class="answer">{{questionnaire["3.1"]}}</span>
+    </div>
+    <div class="section">Intoxications 
+      <span class="answer">{{questionnaire["3.2"]}}</span>
+    </div>
+    <div>Do you smoke?  
+      <span class="answer">{{questionnaire.smoke?questionnaire.smoke:false}}</span>
+    </div>
+    <div>Do you drink alchohol? {{questionnaire.alchohol?questionnaire.alchohol:false}}
+      <span class="answer"></span>
+    </div>
+  </div>
+</div>

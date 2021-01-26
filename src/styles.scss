@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+html, body { 
+  height: 100%; 
+  width: 100%;
+}
+
+div {
+  margin: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  color: rgb(39, 39, 39);
+}
+
+.section {
+  background-color: rgb(185, 220, 221);
+  // margin-left: -15px;
+  margin: 10px -15px;
+  padding: 15px 5px;
+  color: rgb(68, 67, 71);
+}
+
+input {
+  border: none;
+  margin-top: 10px;
+  height: 36px;
+  border-bottom: 2px solid rgba(85, 45, 158, 0.356);
+  background-color: rgb(241, 241, 241);
+  transition: all 0.3s;
+  font-size: 22px;
+  color: rgb(39, 39, 39)
+}
+
+input:hover {
+  border-bottom: 2px solid rgba(90, 41, 180, 0.904);
+  color:rgb(54, 49, 63)
+}
+
+.checkbox {
+  width:35px;
+  margin-left: 20px;
+}
+
+.checkboxDiv {
+  flex-direction: row;
+  align-items: center;
+}
+
+button {
+  font-size: 25px;
+  background-color: rgba(85, 45, 158, 0.356);
+  padding: 10px 25px;
+  border: none;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
